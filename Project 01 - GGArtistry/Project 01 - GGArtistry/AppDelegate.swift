@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window!.makeKeyAndVisible()
         
+        print("start")
+        
         return true
     }
 
