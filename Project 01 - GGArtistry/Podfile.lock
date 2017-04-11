@@ -1,12 +1,18 @@
 PODS:
   - DynamicColor (3.2.1)
+  - ObjectMapper (2.2.5)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - DynamicColor (~> 3.2.1)
+  - ObjectMapper
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   DynamicColor: 4786d650c69da6c3f2cbfe068348288ec4e5521f
+  ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: f9f6c93c2a5d9cd3532991c9504745bdf3ebb0d0
+PODFILE CHECKSUM: fa9a9f3323c15472fcbafc03416ccdaa0ba153dd
 
 COCOAPODS: 1.2.0

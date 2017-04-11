@@ -15,8 +15,13 @@
 		DD01282B1E94B186007A0F6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0128291E94B186007A0F6E /* LaunchScreen.storyboard */; };
 		DD0128361E94B186007A0F6E /* Project_01___GGArtistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0128351E94B186007A0F6E /* Project_01___GGArtistryTests.swift */; };
 		DD0128411E94B186007A0F6E /* Project_01___GGArtistryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0128401E94B186007A0F6E /* Project_01___GGArtistryUITests.swift */; };
-		DD0128501E94B246007A0F6E /* GGArtistryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01284E1E94B246007A0F6E /* GGArtistryListVC.swift */; };
-		DD0128511E94B246007A0F6E /* GGArtistryListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD01284F1E94B246007A0F6E /* GGArtistryListVC.xib */; };
+		DD13C4DD1E97861B00904EF3 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = DD13C4DC1E97861B00904EF3 /* artists.json */; };
+		DD13C4E41E9788F400904EF3 /* GGArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13C4DF1E9788F400904EF3 /* GGArtistModel.swift */; };
+		DD13C4E51E9788F400904EF3 /* GGArtistryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13C4E21E9788F400904EF3 /* GGArtistryListVC.swift */; };
+		DD13C4E61E9788F400904EF3 /* GGArtistryListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD13C4E31E9788F400904EF3 /* GGArtistryListVC.xib */; };
+		DD13C4E81E97899000904EF3 /* GGWorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13C4E71E97899000904EF3 /* GGWorkModel.swift */; };
+		DD13C4ED1E978AEF00904EF3 /* GGArtistryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13C4EB1E978AEF00904EF3 /* GGArtistryCell.swift */; };
+		DD13C4EE1E978AEF00904EF3 /* GGArtistryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD13C4EC1E978AEF00904EF3 /* GGArtistryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +44,12 @@
 /* Begin PBXFileReference section */
 		0B36D412E6E5A56E9E92FA57 /* Pods-Project 01 - GGArtistryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 01 - GGArtistryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project 01 - GGArtistryUITests/Pods-Project 01 - GGArtistryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		223350FE79AB65E93E90C4CF /* Pods-Project 01 - GGArtistryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 01 - GGArtistryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 01 - GGArtistryUITests/Pods-Project 01 - GGArtistryUITests.release.xcconfig"; sourceTree = "<group>"; };
-		362D4EB09CE55336579120F1 /* Pods_Project_01___GGArtistry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_01___GGArtistry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		427C45204F038A0CA3F4EB77 /* Pods_Project_01___GGArtistryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_01___GGArtistryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		362D4EB09CE55336579120F1 /* Pods_Project_01___GGArtistry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Project_01___GGArtistry.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		427C45204F038A0CA3F4EB77 /* Pods_Project_01___GGArtistryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Project_01___GGArtistryTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49439B2CD6C3E1C74CF15099 /* Pods-Project 01 - GGArtistryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 01 - GGArtistryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 01 - GGArtistryTests/Pods-Project 01 - GGArtistryTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A43CFD0BEC81EE59DEF31D7 /* Pods-Project 01 - GGArtistry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 01 - GGArtistry.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 01 - GGArtistry/Pods-Project 01 - GGArtistry.release.xcconfig"; sourceTree = "<group>"; };
 		A93A2775B53FC34187DB5FB5 /* Pods-Project 01 - GGArtistry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 01 - GGArtistry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project 01 - GGArtistry/Pods-Project 01 - GGArtistry.debug.xcconfig"; sourceTree = "<group>"; };
-		B5A101A4FE7D6CC88533C003 /* Pods_Project_01___GGArtistryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_01___GGArtistryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A101A4FE7D6CC88533C003 /* Pods_Project_01___GGArtistryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Project_01___GGArtistryUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C348D596791DB71BF4C88C79 /* Pods-Project 01 - GGArtistryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 01 - GGArtistryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project 01 - GGArtistryTests/Pods-Project 01 - GGArtistryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD01281D1E94B186007A0F6E /* Project 01 - GGArtistry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 01 - GGArtistry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0128201E94B186007A0F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,13 +57,18 @@
 		DD01282A1E94B186007A0F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD01282C1E94B186007A0F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD0128311E94B186007A0F6E /* Project 01 - GGArtistryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 01 - GGArtistryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD0128351E94B186007A0F6E /* Project_01___GGArtistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_01___GGArtistryTests.swift; sourceTree = "<group>"; };
+		DD0128351E94B186007A0F6E /* Project_01___GGArtistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_01___GGArtistryTests.swift"; sourceTree = "<group>"; };
 		DD0128371E94B186007A0F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD01283C1E94B186007A0F6E /* Project 01 - GGArtistryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 01 - GGArtistryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD0128401E94B186007A0F6E /* Project_01___GGArtistryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_01___GGArtistryUITests.swift; sourceTree = "<group>"; };
+		DD0128401E94B186007A0F6E /* Project_01___GGArtistryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_01___GGArtistryUITests.swift"; sourceTree = "<group>"; };
 		DD0128421E94B186007A0F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD01284E1E94B246007A0F6E /* GGArtistryListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGArtistryListVC.swift; sourceTree = "<group>"; };
-		DD01284F1E94B246007A0F6E /* GGArtistryListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGArtistryListVC.xib; sourceTree = "<group>"; };
+		DD13C4DC1E97861B00904EF3 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
+		DD13C4DF1E9788F400904EF3 /* GGArtistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGArtistModel.swift; sourceTree = "<group>"; };
+		DD13C4E21E9788F400904EF3 /* GGArtistryListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGArtistryListVC.swift; sourceTree = "<group>"; };
+		DD13C4E31E9788F400904EF3 /* GGArtistryListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGArtistryListVC.xib; sourceTree = "<group>"; };
+		DD13C4E71E97899000904EF3 /* GGWorkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGWorkModel.swift; sourceTree = "<group>"; };
+		DD13C4EB1E978AEF00904EF3 /* GGArtistryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGArtistryCell.swift; sourceTree = "<group>"; };
+		DD13C4EC1E978AEF00904EF3 /* GGArtistryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGArtistryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +124,14 @@
 		DD01281F1E94B186007A0F6E /* Project 01 - GGArtistry */ = {
 			isa = PBXGroup;
 			children = (
+				DD13C4E91E978AEF00904EF3 /* CustomViews */,
+				DD13C4DE1E9788F400904EF3 /* Models */,
+				DD13C4E01E9788F400904EF3 /* Viewcontrollers */,
+				DD13C4DB1E97848E00904EF3 /* Resources */,
 				DD0128201E94B186007A0F6E /* AppDelegate.swift */,
 				DD0128271E94B186007A0F6E /* Assets.xcassets */,
 				DD0128291E94B186007A0F6E /* LaunchScreen.storyboard */,
 				DD01282C1E94B186007A0F6E /* Info.plist */,
-				DD01284E1E94B246007A0F6E /* GGArtistryListVC.swift */,
-				DD01284F1E94B246007A0F6E /* GGArtistryListVC.xib */,
 			);
 			path = "Project 01 - GGArtistry";
 			sourceTree = "<group>";
@@ -140,6 +152,57 @@
 				DD0128421E94B186007A0F6E /* Info.plist */,
 			);
 			path = "Project 01 - GGArtistryUITests";
+			sourceTree = "<group>";
+		};
+		DD13C4DB1E97848E00904EF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD13C4DC1E97861B00904EF3 /* artists.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD13C4DE1E9788F400904EF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD13C4DF1E9788F400904EF3 /* GGArtistModel.swift */,
+				DD13C4E71E97899000904EF3 /* GGWorkModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD13C4E01E9788F400904EF3 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				DD13C4E11E9788F400904EF3 /* ArtistryList */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		DD13C4E11E9788F400904EF3 /* ArtistryList */ = {
+			isa = PBXGroup;
+			children = (
+				DD13C4E21E9788F400904EF3 /* GGArtistryListVC.swift */,
+				DD13C4E31E9788F400904EF3 /* GGArtistryListVC.xib */,
+			);
+			path = ArtistryList;
+			sourceTree = "<group>";
+		};
+		DD13C4E91E978AEF00904EF3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				DD13C4EA1E978AEF00904EF3 /* ArtistryCell */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		DD13C4EA1E978AEF00904EF3 /* ArtistryCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD13C4EB1E978AEF00904EF3 /* GGArtistryCell.swift */,
+				DD13C4EC1E978AEF00904EF3 /* GGArtistryCell.xib */,
+			);
+			path = ArtistryCell;
 			sourceTree = "<group>";
 		};
 		F8DE51654E9B931FC56857F1 /* Frameworks */ = {
@@ -281,9 +344,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD13C4EE1E978AEF00904EF3 /* GGArtistryCell.xib in Resources */,
 				DD01282B1E94B186007A0F6E /* LaunchScreen.storyboard in Resources */,
-				DD0128511E94B246007A0F6E /* GGArtistryListVC.xib in Resources */,
 				DD0128281E94B186007A0F6E /* Assets.xcassets in Resources */,
+				DD13C4E61E9788F400904EF3 /* GGArtistryListVC.xib in Resources */,
+				DD13C4DD1E97861B00904EF3 /* artists.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +511,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD0128501E94B246007A0F6E /* GGArtistryListVC.swift in Sources */,
+				DD13C4E41E9788F400904EF3 /* GGArtistModel.swift in Sources */,
+				DD13C4E51E9788F400904EF3 /* GGArtistryListVC.swift in Sources */,
+				DD13C4ED1E978AEF00904EF3 /* GGArtistryCell.swift in Sources */,
+				DD13C4E81E97899000904EF3 /* GGWorkModel.swift in Sources */,
 				DD0128211E94B186007A0F6E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +664,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Project 01 - GGArtistry/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gg4acrossover.ggartistry.Project-01---GGArtistry";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -610,6 +679,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Project 01 - GGArtistry/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gg4acrossover.ggartistry.Project-01---GGArtistry";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -694,6 +764,7 @@
 				DD0128471E94B186007A0F6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD0128481E94B186007A0F6E /* Build configuration list for PBXNativeTarget "Project 01 - GGArtistryTests" */ = {
 			isa = XCConfigurationList;
@@ -702,6 +773,7 @@
 				DD01284A1E94B186007A0F6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD01284B1E94B186007A0F6E /* Build configuration list for PBXNativeTarget "Project 01 - GGArtistryUITests" */ = {
 			isa = XCConfigurationList;
@@ -710,6 +782,7 @@
 				DD01284D1E94B186007A0F6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
