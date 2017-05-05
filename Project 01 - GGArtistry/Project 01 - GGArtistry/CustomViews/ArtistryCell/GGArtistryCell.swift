@@ -14,7 +14,7 @@ protocol GGArtistryCellDisplayProtocol {
     var titleLabel : String? { get }
 }
 
-final class GGArtistryCell: UITableViewCell {
+final class GGArtistryCell: UITableViewCell, GGBaseCellProtocol {
     
     @IBOutlet weak var iconImage: UIImageView!
     
@@ -22,10 +22,22 @@ final class GGArtistryCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var detailButton: UIButton!
+    
+    var clickdetailButtonEvent : (()->())?
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.detailButton.isHidden = true
+        self.detailButton.addTarget(self, action: #selector(clickDetailButton(sender:)), for: .touchUpInside)
+    }
+        
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // always fix iconImage size
+        self.iconImage.frame = CGRect(x: 5.0, y: 5.0, width: 128, height: 128)
     }
     
     func displayData(item : GGArtistryCellDisplayProtocol) {
@@ -37,10 +49,18 @@ final class GGArtistryCell: UITableViewCell {
             return
         }
         
+        self.iconImage.contentMode = .scaleAspectFill
         self.iconImage.image = UIImage(named: icon)
         
         self.introductionLabel.text = introduction
         
         self.titleLabel.text = titleLabel
+    }
+    
+    /// callback for click detail button
+    func clickDetailButton( sender : UIButton) {
+        if let block = self.clickdetailButtonEvent {
+            block()
+        }
     }
 }

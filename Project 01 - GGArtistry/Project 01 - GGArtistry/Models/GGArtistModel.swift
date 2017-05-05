@@ -18,6 +18,8 @@ class GGArtistModel: NSObject, Mappable {
     var image : String?
     var works = [GGWorkModel]()
     
+    var isExpand = false
+    
     /// get artist from resources
     static func artistsFromBundle() -> [GGArtistModel]? {
         // if URL invalid, return nil
@@ -58,7 +60,7 @@ class GGArtistModel: NSObject, Mappable {
         //TODO: init implement for Mappable
     }
     
-    ///
+    /// implement protocol ObjectMapper
     func mapping(map: Map) {
         self.name <- map["name"]
         self.bio <- map["bio"]

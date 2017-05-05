@@ -22,6 +22,11 @@
 		DD13C4E81E97899000904EF3 /* GGWorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13C4E71E97899000904EF3 /* GGWorkModel.swift */; };
 		DD13C4ED1E978AEF00904EF3 /* GGArtistryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13C4EB1E978AEF00904EF3 /* GGArtistryCell.swift */; };
 		DD13C4EE1E978AEF00904EF3 /* GGArtistryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD13C4EC1E978AEF00904EF3 /* GGArtistryCell.xib */; };
+		DD337C581E9CB83300CAE19D /* GGBaseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD337C571E9CB83300CAE19D /* GGBaseCellProtocol.swift */; };
+		DD79A10F1E9DDC6E00677EE2 /* GGWorkDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79A10D1E9DDC6E00677EE2 /* GGWorkDetailVC.swift */; };
+		DD79A1101E9DDC6E00677EE2 /* GGWorkDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD79A10E1E9DDC6E00677EE2 /* GGWorkDetailVC.xib */; };
+		DDE3C60F1E9E1AAC00FC57A1 /* GGWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE3C60D1E9E1AAC00FC57A1 /* GGWorkCell.swift */; };
+		DDE3C6101E9E1AAC00FC57A1 /* GGWorkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDE3C60E1E9E1AAC00FC57A1 /* GGWorkCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		DD13C4E71E97899000904EF3 /* GGWorkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGWorkModel.swift; sourceTree = "<group>"; };
 		DD13C4EB1E978AEF00904EF3 /* GGArtistryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGArtistryCell.swift; sourceTree = "<group>"; };
 		DD13C4EC1E978AEF00904EF3 /* GGArtistryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGArtistryCell.xib; sourceTree = "<group>"; };
+		DD337C571E9CB83300CAE19D /* GGBaseCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGBaseCellProtocol.swift; sourceTree = "<group>"; };
+		DD79A10D1E9DDC6E00677EE2 /* GGWorkDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGWorkDetailVC.swift; sourceTree = "<group>"; };
+		DD79A10E1E9DDC6E00677EE2 /* GGWorkDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGWorkDetailVC.xib; sourceTree = "<group>"; };
+		DDE3C60D1E9E1AAC00FC57A1 /* GGWorkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGWorkCell.swift; sourceTree = "<group>"; };
+		DDE3C60E1E9E1AAC00FC57A1 /* GGWorkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGWorkCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +134,7 @@
 		DD01281F1E94B186007A0F6E /* Project 01 - GGArtistry */ = {
 			isa = PBXGroup;
 			children = (
+				DD337C561E9CB7D000CAE19D /* Util */,
 				DD13C4E91E978AEF00904EF3 /* CustomViews */,
 				DD13C4DE1E9788F400904EF3 /* Models */,
 				DD13C4E01E9788F400904EF3 /* Viewcontrollers */,
@@ -174,6 +185,7 @@
 		DD13C4E01E9788F400904EF3 /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				DD79A10C1E9DCAE600677EE2 /* Work */,
 				DD13C4E11E9788F400904EF3 /* ArtistryList */,
 			);
 			path = Viewcontrollers;
@@ -191,6 +203,7 @@
 		DD13C4E91E978AEF00904EF3 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				DDE3C60C1E9E08EF00FC57A1 /* WorkCell */,
 				DD13C4EA1E978AEF00904EF3 /* ArtistryCell */,
 			);
 			path = CustomViews;
@@ -203,6 +216,32 @@
 				DD13C4EC1E978AEF00904EF3 /* GGArtistryCell.xib */,
 			);
 			path = ArtistryCell;
+			sourceTree = "<group>";
+		};
+		DD337C561E9CB7D000CAE19D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DD337C571E9CB83300CAE19D /* GGBaseCellProtocol.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DD79A10C1E9DCAE600677EE2 /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				DD79A10D1E9DDC6E00677EE2 /* GGWorkDetailVC.swift */,
+				DD79A10E1E9DDC6E00677EE2 /* GGWorkDetailVC.xib */,
+			);
+			path = Work;
+			sourceTree = "<group>";
+		};
+		DDE3C60C1E9E08EF00FC57A1 /* WorkCell */ = {
+			isa = PBXGroup;
+			children = (
+				DDE3C60D1E9E1AAC00FC57A1 /* GGWorkCell.swift */,
+				DDE3C60E1E9E1AAC00FC57A1 /* GGWorkCell.xib */,
+			);
+			path = WorkCell;
 			sourceTree = "<group>";
 		};
 		F8DE51654E9B931FC56857F1 /* Frameworks */ = {
@@ -344,8 +383,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD79A1101E9DDC6E00677EE2 /* GGWorkDetailVC.xib in Resources */,
 				DD13C4EE1E978AEF00904EF3 /* GGArtistryCell.xib in Resources */,
 				DD01282B1E94B186007A0F6E /* LaunchScreen.storyboard in Resources */,
+				DDE3C6101E9E1AAC00FC57A1 /* GGWorkCell.xib in Resources */,
 				DD0128281E94B186007A0F6E /* Assets.xcassets in Resources */,
 				DD13C4E61E9788F400904EF3 /* GGArtistryListVC.xib in Resources */,
 				DD13C4DD1E97861B00904EF3 /* artists.json in Resources */,
@@ -515,7 +556,10 @@
 				DD13C4E51E9788F400904EF3 /* GGArtistryListVC.swift in Sources */,
 				DD13C4ED1E978AEF00904EF3 /* GGArtistryCell.swift in Sources */,
 				DD13C4E81E97899000904EF3 /* GGWorkModel.swift in Sources */,
+				DDE3C60F1E9E1AAC00FC57A1 /* GGWorkCell.swift in Sources */,
+				DD337C581E9CB83300CAE19D /* GGBaseCellProtocol.swift in Sources */,
 				DD0128211E94B186007A0F6E /* AppDelegate.swift in Sources */,
+				DD79A10F1E9DDC6E00677EE2 /* GGWorkDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
