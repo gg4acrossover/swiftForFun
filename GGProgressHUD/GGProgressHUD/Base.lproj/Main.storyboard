@@ -36,6 +36,9 @@
                             <constraint firstItem="dKe-wD-h1G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="96" id="k9U-cv-dq3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="dKe-wD-h1G" id="QQA-dr-RlK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
