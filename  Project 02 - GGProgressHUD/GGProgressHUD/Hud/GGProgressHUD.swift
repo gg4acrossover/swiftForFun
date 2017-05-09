@@ -14,7 +14,7 @@ fileprivate let kRectProgressView = CGRect(x: 0.0, y: 0.0, width: 100.0, height:
 fileprivate let kRectIconView = CGRect(x: 0.0, y: 0.0, width: kRectProgressView.width * 0.5, height: kRectProgressView.height * 0.5)
 
 class GGProgressHUD {
-    //MARK: - Properties
+    ///MARK: - Properties
     static let share = GGProgressHUD()
     
     var rootWindow : UIWindow?
