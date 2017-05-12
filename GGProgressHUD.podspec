@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '\Project\ 02\ -\ GGProgressHUD/GGProgressHUD/Hud/**/*.swift'
+  s.source_files = 'swiftForFun/Project\ 02\ -\ GGProgressHUD/GGProgressHUD/Hud/**/*.swift'
 
   s.dependency 'NVActivityIndicatorView'
   
