@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'viethq' => 'gg4acrossover@gmail.com' }
-  s.source           = { :http => 'https://github.com/gg4acrossover/swiftForFun/tree/master/%20Project%2002%20-%20GGProgressHUD'}
+  s.source           = { :git => 'https://github.com/gg4acrossover/swiftForFun.git', :tag => s.version}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
