@@ -29,15 +29,6 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + testTime + 3.0) {
             GGProgressHUD.hide()
         }
-        
-        // the second time
-        DispatchQueue.main.asyncAfter(deadline: .now() + testTime + 4.0) {
-            GGProgressHUD.show()
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + testTime + 7.0) {
-            GGProgressHUD.hide()
-        }
     }
     
     func settingUI() {
