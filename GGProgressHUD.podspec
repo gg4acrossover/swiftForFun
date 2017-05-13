@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'GGProgressHUD'
+  s.name             = 'SwiftForFun'
   s.version          = '0.1.0'
   s.summary          = 'Simple Hub, wrapper with NVActivityIndicatorView'
 
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Project\ 02\ -\ GGProgressHUD/GGProgressHUD/Hud/**/*.swift'
+  s.source_files = 'Project\ 02\ -\ GGProgressHUD/GGProgressHUD/Hud/*.swift'
   s.dependency 'NVActivityIndicatorView'
   
   # s.resource_bundles = {
