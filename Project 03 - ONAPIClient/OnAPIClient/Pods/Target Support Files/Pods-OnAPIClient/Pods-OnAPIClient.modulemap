@@ -1,0 +1,6 @@
+framework module Pods_OnAPIClient {
+  umbrella header "Pods-OnAPIClient-umbrella.h"
+
+  export *
+  module * { export * }
+}
