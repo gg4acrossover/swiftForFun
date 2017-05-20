@@ -6,5 +6,6 @@ target 'OnAPIClient' do
   use_frameworks!
 
   # Pods for OnAPIClient
-  pod 'Alamofire', '~> 4.4'
+  pod 'Moya', '~> 4.4'
+  pod 'SwiftyJSON'
 end
