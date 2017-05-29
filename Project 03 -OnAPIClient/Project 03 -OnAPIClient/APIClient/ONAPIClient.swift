@@ -30,7 +30,7 @@ open class ONAPIClient {
         
         // add authorization if need
         if router.isAuthorization {
-            headers["Authorization"] = router.tokenStr
+            headers["Authorization"] = router.tokenKind + " " + router.tokenStr
         }
         
         debugPrint(router.method.rawValue + " " + router.url)
