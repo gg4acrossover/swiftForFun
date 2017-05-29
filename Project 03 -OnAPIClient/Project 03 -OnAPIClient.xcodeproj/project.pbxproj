@@ -17,7 +17,6 @@
 		DD4FF5431EDBBC3D00427050 /* ONAPIClientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FF5421EDBBC3D00427050 /* ONAPIClientHelper.swift */; };
 		DD4FF5451EDBBE4800427050 /* ONAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FF5441EDBBE4800427050 /* ONAPIClient.swift */; };
 		DD4FF5471EDBD60C00427050 /* ONAPIClient+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FF5461EDBD60C00427050 /* ONAPIClient+Request.swift */; };
-		DD6D4BB11ED5931D0062241D /* ONRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D4BB01ED5931D0062241D /* ONRequestProtocol.swift */; };
 		DDAD4AE01ED3D80300748641 /* ONRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4ADF1ED3D80300748641 /* ONRequestRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		DD4FF5421EDBBC3D00427050 /* ONAPIClientHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONAPIClientHelper.swift; sourceTree = "<group>"; };
 		DD4FF5441EDBBE4800427050 /* ONAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONAPIClient.swift; sourceTree = "<group>"; };
 		DD4FF5461EDBD60C00427050 /* ONAPIClient+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ONAPIClient+Request.swift"; sourceTree = "<group>"; };
-		DD6D4BB01ED5931D0062241D /* ONRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONRequestProtocol.swift; sourceTree = "<group>"; };
 		DDAD4ADF1ED3D80300748641 /* ONRequestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONRequestRouter.swift; sourceTree = "<group>"; };
 		F16C810D1EAD345500E2D64F /* Pods-Project 03 -OnAPIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 03 -OnAPIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 03 -OnAPIClient/Pods-Project 03 -OnAPIClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +104,6 @@
 			children = (
 				DD168A261ECFF5BE003A152A /* APISetting.swift */,
 				DDAD4ADF1ED3D80300748641 /* ONRequestRouter.swift */,
-				DD6D4BB01ED5931D0062241D /* ONRequestProtocol.swift */,
 				DD4FF5421EDBBC3D00427050 /* ONAPIClientHelper.swift */,
 				DD4FF5441EDBBE4800427050 /* ONAPIClient.swift */,
 				DD4FF5461EDBD60C00427050 /* ONAPIClient+Request.swift */,
@@ -242,7 +239,6 @@
 				DD168A121ECFF35A003A152A /* AppDelegate.swift in Sources */,
 				DDAD4AE01ED3D80300748641 /* ONRequestRouter.swift in Sources */,
 				DD4FF5451EDBBE4800427050 /* ONAPIClient.swift in Sources */,
-				DD6D4BB11ED5931D0062241D /* ONRequestProtocol.swift in Sources */,
 				DD4FF5471EDBD60C00427050 /* ONAPIClient+Request.swift in Sources */,
 				DD168A271ECFF5BE003A152A /* APISetting.swift in Sources */,
 			);

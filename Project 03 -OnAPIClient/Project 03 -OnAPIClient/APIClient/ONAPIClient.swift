@@ -34,6 +34,7 @@ open class ONAPIClient {
         }
         
         debugPrint(router.method.rawValue + " " + router.url)
+        debugPrint("Headers: \(headers)")
         
         return sessionMng.request(router.url, method: router.method, parameters: params, headers: headers)
                          .validate()

@@ -32,6 +32,7 @@ public protocol ONUrl : ONPath, ONToken, ONMethod {
     var url : String { get }
 }
 
+// default token
 extension ONToken {
     var tokenKind : String {
         return "Bearer"
@@ -46,7 +47,7 @@ extension ONToken {
     }
 }
 
-// generate url
+// default generate url
 extension ONUrl {
     var url : String {
         return self.baseURL.appending(self.path)
