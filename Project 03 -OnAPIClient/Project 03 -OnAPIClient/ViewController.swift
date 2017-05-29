@@ -12,14 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.callGithubUser(acc: "gg4acrossover")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func callGithubUser(acc: String) {
+        ONAPIClient.getGithubAcc(acc, success: { (json) in
+            debugPrint(json)
+        }) { (err) in
+            debugPrint(err!)
+        }
     }
-
-
 }
 

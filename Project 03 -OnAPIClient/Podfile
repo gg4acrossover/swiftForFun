@@ -7,5 +7,6 @@ target 'Project 03 -OnAPIClient' do
 
   # Pods for Project 03 -OnAPIClient
   pod 'Moya'
+  pod 'SwiftyJSON'
 
 end

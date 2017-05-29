@@ -13,6 +13,12 @@
 		DD168A171ECFF35A003A152A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD168A151ECFF35A003A152A /* Main.storyboard */; };
 		DD168A191ECFF35A003A152A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD168A181ECFF35A003A152A /* Assets.xcassets */; };
 		DD168A1C1ECFF35A003A152A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD168A1A1ECFF35A003A152A /* LaunchScreen.storyboard */; };
+		DD168A271ECFF5BE003A152A /* APISetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD168A261ECFF5BE003A152A /* APISetting.swift */; };
+		DD4FF5431EDBBC3D00427050 /* ONAPIClientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FF5421EDBBC3D00427050 /* ONAPIClientHelper.swift */; };
+		DD4FF5451EDBBE4800427050 /* ONAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FF5441EDBBE4800427050 /* ONAPIClient.swift */; };
+		DD4FF5471EDBD60C00427050 /* ONAPIClient+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FF5461EDBD60C00427050 /* ONAPIClient+Request.swift */; };
+		DD6D4BB11ED5931D0062241D /* ONRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D4BB01ED5931D0062241D /* ONRequestProtocol.swift */; };
+		DDAD4AE01ED3D80300748641 /* ONRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4ADF1ED3D80300748641 /* ONRequestRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		DD168A181ECFF35A003A152A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD168A1B1ECFF35A003A152A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD168A1D1ECFF35A003A152A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD168A261ECFF5BE003A152A /* APISetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISetting.swift; sourceTree = "<group>"; };
+		DD4FF5421EDBBC3D00427050 /* ONAPIClientHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONAPIClientHelper.swift; sourceTree = "<group>"; };
+		DD4FF5441EDBBE4800427050 /* ONAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONAPIClient.swift; sourceTree = "<group>"; };
+		DD4FF5461EDBD60C00427050 /* ONAPIClient+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ONAPIClient+Request.swift"; sourceTree = "<group>"; };
+		DD6D4BB01ED5931D0062241D /* ONRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONRequestProtocol.swift; sourceTree = "<group>"; };
+		DDAD4ADF1ED3D80300748641 /* ONRequestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONRequestRouter.swift; sourceTree = "<group>"; };
 		F16C810D1EAD345500E2D64F /* Pods-Project 03 -OnAPIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 03 -OnAPIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 03 -OnAPIClient/Pods-Project 03 -OnAPIClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +90,7 @@
 		DD168A101ECFF35A003A152A /* Project 03 -OnAPIClient */ = {
 			isa = PBXGroup;
 			children = (
+				DD168A231ECFF57B003A152A /* APIClient */,
 				DD168A111ECFF35A003A152A /* AppDelegate.swift */,
 				DD168A131ECFF35A003A152A /* ViewController.swift */,
 				DD168A151ECFF35A003A152A /* Main.storyboard */,
@@ -86,6 +99,19 @@
 				DD168A1D1ECFF35A003A152A /* Info.plist */,
 			);
 			path = "Project 03 -OnAPIClient";
+			sourceTree = "<group>";
+		};
+		DD168A231ECFF57B003A152A /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				DD168A261ECFF5BE003A152A /* APISetting.swift */,
+				DDAD4ADF1ED3D80300748641 /* ONRequestRouter.swift */,
+				DD6D4BB01ED5931D0062241D /* ONRequestProtocol.swift */,
+				DD4FF5421EDBBC3D00427050 /* ONAPIClientHelper.swift */,
+				DD4FF5441EDBBE4800427050 /* ONAPIClient.swift */,
+				DD4FF5461EDBD60C00427050 /* ONAPIClient+Request.swift */,
+			);
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +237,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4FF5431EDBBC3D00427050 /* ONAPIClientHelper.swift in Sources */,
 				DD168A141ECFF35A003A152A /* ViewController.swift in Sources */,
 				DD168A121ECFF35A003A152A /* AppDelegate.swift in Sources */,
+				DDAD4AE01ED3D80300748641 /* ONRequestRouter.swift in Sources */,
+				DD4FF5451EDBBE4800427050 /* ONAPIClient.swift in Sources */,
+				DD6D4BB11ED5931D0062241D /* ONRequestProtocol.swift in Sources */,
+				DD4FF5471EDBD60C00427050 /* ONAPIClient+Request.swift in Sources */,
+				DD168A271ECFF5BE003A152A /* APISetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +410,7 @@
 				DD168A221ECFF35A003A152A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
