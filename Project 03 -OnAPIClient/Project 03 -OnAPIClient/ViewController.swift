@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.callGithubUser(acc: "gg4acrossover")
+        self.callGithubUser(acc: "gg4acrossover")        
     }
     
     func callGithubUser(acc: String) {

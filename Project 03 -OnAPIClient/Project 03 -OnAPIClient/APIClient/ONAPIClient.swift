@@ -20,12 +20,15 @@ open class ONAPIClient {
     
     // MARK: - Method
     /// call api using instance implement ONURL interface
+    /// this call using default validate
     /// - Returns: DataRequest (Alamofire)
     @discardableResult
     public func call(router: ONUrl, params: [String: Any]? = nil, success: @escaping responseJSON, fail: @escaping responseError) -> DataRequest {
         
+        // add accept header
         var headers = ["Accept" : "application/json,charset=utf-8,text/html"]
         
+        // add authorization if need
         if router.isAuthorization {
             headers["Authorization"] = router.tokenStr
         }
@@ -33,6 +36,7 @@ open class ONAPIClient {
         debugPrint(router.method.rawValue + " " + router.url)
         
         return sessionMng.request(router.url, method: router.method, parameters: params, headers: headers)
+                         .validate()
                          .responseJSON { response in
                 switch response.result {
                 case .success(let value):
@@ -45,24 +49,5 @@ open class ONAPIClient {
                     fail(error)
             }
         }
-    }
-        
-    /// call api using instance of ONRequestHelper
-    /// - Returns: DataRequest (Alamofire)
-    @discardableResult
-    public func call(requestHelper : ONRequestHelper, success: @escaping responseJSON, fail: @escaping responseError) -> DataRequest {
-        return  Alamofire.request(requestHelper).validate()
-                         .responseJSON { (response) in
-                    switch response.result {
-                        case .success(let value):
-                            let json = JSON(value)
-                            success(json)
-                        case .failure(let error):
-                            if error._code == NSURLErrorTimedOut {
-                                debugPrint("Request Timeout...")
-                            }
-                            fail(error)
-                    } // end switch
-                } // end return scope
-    }
+    }        
 }

@@ -52,37 +52,3 @@ extension ONUrl {
         return self.baseURL.appending(self.path)
     }
 }
-
-public class ONRequestHelper : URLRequestConvertible {
-    
-    public typealias httpMethod = Alamofire.HTTPMethod
-    
-    private var router : ONUrl
-    private var params : String?
-    
-    public init(router : ONUrl,
-                params : String? = nil) {
-        self.router = router
-        self.params = params
-    }
-    
-    public func asURLRequest() throws -> URLRequest {
-        let url = try self.router.url.asURL()
-        
-        var urlRequest = URLRequest(url: url)
-        
-        urlRequest.httpMethod = self.router.method.rawValue
-        
-        urlRequest.setValue("application/json", forHTTPHeaderField: "Accept")
-        urlRequest.addValue("charset=utf-8", forHTTPHeaderField: "Accept")
-        urlRequest.addValue("text/html", forHTTPHeaderField: "Accept")
-        
-        if self.router.isAuthorization {
-            urlRequest.setValue(self.router.tokenKind + " " + self.router.tokenStr, forHTTPHeaderField: "Authorization")
-        }
-        
-        debugPrint(urlRequest.allHTTPHeaderFields!)
-        
-        return urlRequest
-    }
-}

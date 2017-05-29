@@ -9,7 +9,10 @@
 import Foundation
 
 extension ONAPIClient {
+    
+    /// call github's user detail
     static func getGithubAcc(_ userName : String, success: @escaping responseJSON, fail: @escaping responseError) {
-        ONAPIClient.default.call(router: ONGithubURL.getGitHubUser(account: "gg4acrossover"), success: success, fail: fail)
+        let router = ONGithubURL.getGitHubUser(account: "gg4acrossover")
+        ONAPIClient.default.call(router: router, success: success, fail: fail)
     }
 }
