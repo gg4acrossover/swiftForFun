@@ -25,6 +25,7 @@
 		DD337C581E9CB83300CAE19D /* GGBaseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD337C571E9CB83300CAE19D /* GGBaseCellProtocol.swift */; };
 		DD79A10F1E9DDC6E00677EE2 /* GGWorkDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79A10D1E9DDC6E00677EE2 /* GGWorkDetailVC.swift */; };
 		DD79A1101E9DDC6E00677EE2 /* GGWorkDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD79A10E1E9DDC6E00677EE2 /* GGWorkDetailVC.xib */; };
+		DD84FF571EE7AE1700D8FC50 /* ONRegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD84FF561EE7AE1700D8FC50 /* ONRegisterCell.swift */; };
 		DDE3C60F1E9E1AAC00FC57A1 /* GGWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE3C60D1E9E1AAC00FC57A1 /* GGWorkCell.swift */; };
 		DDE3C6101E9E1AAC00FC57A1 /* GGWorkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDE3C60E1E9E1AAC00FC57A1 /* GGWorkCell.xib */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		DD337C571E9CB83300CAE19D /* GGBaseCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGBaseCellProtocol.swift; sourceTree = "<group>"; };
 		DD79A10D1E9DDC6E00677EE2 /* GGWorkDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGWorkDetailVC.swift; sourceTree = "<group>"; };
 		DD79A10E1E9DDC6E00677EE2 /* GGWorkDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGWorkDetailVC.xib; sourceTree = "<group>"; };
+		DD84FF561EE7AE1700D8FC50 /* ONRegisterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONRegisterCell.swift; sourceTree = "<group>"; };
 		DDE3C60D1E9E1AAC00FC57A1 /* GGWorkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGWorkCell.swift; sourceTree = "<group>"; };
 		DDE3C60E1E9E1AAC00FC57A1 /* GGWorkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGWorkCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				DD337C571E9CB83300CAE19D /* GGBaseCellProtocol.swift */,
+				DD84FF561EE7AE1700D8FC50 /* ONRegisterCell.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				DD13C4E81E97899000904EF3 /* GGWorkModel.swift in Sources */,
 				DDE3C60F1E9E1AAC00FC57A1 /* GGWorkCell.swift in Sources */,
 				DD337C581E9CB83300CAE19D /* GGBaseCellProtocol.swift in Sources */,
+				DD84FF571EE7AE1700D8FC50 /* ONRegisterCell.swift in Sources */,
 				DD0128211E94B186007A0F6E /* AppDelegate.swift in Sources */,
 				DD79A10F1E9DDC6E00677EE2 /* GGWorkDetailVC.swift in Sources */,
 			);

@@ -20,25 +20,13 @@ protocol GGBaseCellProtocol {
 /**
     default implement for cell
  */
-extension GGBaseCellProtocol where Self : UICollectionViewCell {
+extension GGBaseCellProtocol where Self : UIView {
     /// collectionView get nibname
     static func getNibName() -> String {
         return String(describing: self)
     }
     
     /// collectionView get nib
-    static func getNib() -> UINib {
-        return UINib.init(nibName: self.getNibName(), bundle: nil)
-    }
-}
-
-extension GGBaseCellProtocol where Self : UITableViewCell {
-    /// tableview get nibname
-    static func getNibName() -> String {
-        return String(describing: self)
-    }
-    
-    /// tableview get nib
     static func getNib() -> UINib {
         return UINib.init(nibName: self.getNibName(), bundle: nil)
     }

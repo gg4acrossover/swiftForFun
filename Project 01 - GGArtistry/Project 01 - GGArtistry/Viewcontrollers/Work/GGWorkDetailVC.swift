@@ -32,8 +32,9 @@ extension GGWorkDetailVC {
         //
         self.title = "Works"
         
-        //
-        self.collectionView.register(GGWorkCell.getNib(), forCellWithReuseIdentifier: GGWorkCell.getNibName())
+        // two ways register cell
+        //self.collectionView.register(GGWorkCell.getNib(), forCellWithReuseIdentifier: GGWorkCell.getNibName())
+        self.collectionView.on_register(type: GGWorkCell.self)
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
@@ -48,7 +49,8 @@ extension GGWorkDetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GGWorkCell.getNibName(), for: indexPath) as! GGWorkCell
+        //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GGWorkCell.getNibName(), for: indexPath) as! GGWorkCell
+        let cell : GGWorkCell = self.collectionView.on_dequeueReusable(idxPath: indexPath)
         
         let item = self.works[indexPath.row]
         

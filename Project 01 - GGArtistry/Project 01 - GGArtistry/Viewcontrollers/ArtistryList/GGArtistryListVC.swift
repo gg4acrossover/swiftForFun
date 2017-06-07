@@ -9,21 +9,6 @@
 import UIKit
 import DynamicColor
 
-/// enum helper
-enum XibViewcontroller {
-    case workVC
-    
-    func createVC() -> UIViewController {
-        switch self {
-        case .workVC:
-            let vc = GGWorkDetailVC(nibName: nil, bundle: nil)
-            return vc
-        }
-    }
-}
-
-/// 
-
 final class GGArtistryListVC: UIViewController {
     
     @IBOutlet weak var listTbl: UITableView!
@@ -57,7 +42,7 @@ fileprivate extension GGArtistryListVC {
                                                                         NSFontAttributeName : UIFont.boldSystemFont(ofSize: 20)]
         
         //
-        self.listTbl.register(GGArtistryCell.getNib(), forCellReuseIdentifier: GGArtistryCell.getNibName())
+        self.listTbl.on_register(type: GGArtistryCell.self)
         
         self.listTbl.delegate = self
         self.listTbl.dataSource = self
@@ -76,25 +61,25 @@ extension GGArtistryListVC : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: GGArtistryCell.getNibName()) as! GGArtistryCell
+        let cell : GGArtistryCell = self.listTbl.on_dequeue(idxPath: indexPath)
         
         let item = self.artists[indexPath.row]
-        
+
         cell.displayData(item: item)
-        
+
         cell.introductionLabel.numberOfLines = item.isExpand ? 0 : 3
         cell.detailButton.isHidden = !item.isExpand
 
         cell.selectionStyle = .none
-        
+
         // navigate to detail viewcontroller
         cell.clickdetailButtonEvent = { [weak self] in
             let workVC = GGWorkDetailVC(nibName: nil, bundle: nil)
             workVC.works = item.works
-            
+
             self?.navigationController!.pushViewController(workVC, animated: true)
         }
-        
+
         return cell
     }
     
