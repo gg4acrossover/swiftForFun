@@ -16,6 +16,8 @@ public protocol ONPath {
 
 // unit protocol
 public protocol ONToken {
+    
+    /// example: "Bearer", "Basic", etc
     var tokenKind : String { get }
     var tokenStr : String { get }
     var isAuthorization : Bool { get }

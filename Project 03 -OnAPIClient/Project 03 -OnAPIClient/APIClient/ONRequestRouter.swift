@@ -23,7 +23,6 @@ enum ONGithubURL : ONUrl {
             return "users/\(acc)"
         }
     }
-    
 }
 
 // MARK: - method for github urls
