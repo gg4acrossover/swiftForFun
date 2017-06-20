@@ -36,16 +36,12 @@ class ViewController: UIViewController {
         
         shapeLayer.path = bezierPath.cgPath
         
-        shapeLayer.strokeColor = UIColor.black.cgColor
+        shapeLayer.strokeColor = UIColor.blue.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.lineWidth = 2.0
+        shapeLayer.lineWidth = 4.0
         shapeLayer.lineCap = kCALineCapRound
         shapeLayer.frame = bezierPath.cgPath.boundingBox
-        
-        print(shapeLayer.position)
-        print(shapeLayer.anchorPointZ)
-        print(shapeLayer.frame)
-        
+                
         container.layer.addSublayer(shapeLayer)
         self.view.addSubview(container)
         
@@ -53,15 +49,14 @@ class ViewController: UIViewController {
     }
     
     func playAnim() {
-        
-        SVGBen
-        
+        // anim 1
         let firstStroke = CABasicAnimation(keyPath: "strokeEnd")
         
         firstStroke.fromValue = 0.0
         firstStroke.byValue = 0.5
         firstStroke.duration = 1.0
         
+        // anim 2
         let secondStroke = CABasicAnimation(keyPath: "strokeEnd")
         
         secondStroke.fromValue = 0.5
@@ -69,17 +64,19 @@ class ViewController: UIViewController {
         secondStroke.duration = 1.0
         secondStroke.beginTime = 1.0
         
+        // anim 3
         let rotateAnim = CAKeyframeAnimation(keyPath: "transform.rotation")
         rotateAnim.values = [0.0, 2*Double.pi]
         rotateAnim.duration = 2.0
         rotateAnim.isAdditive = true
         
+        // play all animations with CAAnimationGroup
         let group = CAAnimationGroup()
         group.animations = [firstStroke, secondStroke, rotateAnim]
         group.isRemovedOnCompletion = false
         group.fillMode = kCAFillModeForwards
         group.duration = 2.0
-        group.repeatCount = Float.infinity
+        group.repeatCount = Float.infinity // repeat forever
         
         shapeLayer.add(group, forKey: "circle")
     }
