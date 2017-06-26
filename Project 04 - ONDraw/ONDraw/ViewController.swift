@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         shapeLayer.lineWidth = 4.0
         shapeLayer.lineCap = kCALineCapRound
         shapeLayer.frame = bezierPath.cgPath.boundingBox
-                
+        
         container.layer.addSublayer(shapeLayer)
         self.view.addSubview(container)
         
